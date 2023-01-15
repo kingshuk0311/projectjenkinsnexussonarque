@@ -1,0 +1,11 @@
+pipeline{
+    agent any 
+    stages{
+        stage('Git_push'){
+            steps{
+                git branch: 'ver-1', url: 'https://github.com/kingshuk0311/projectjenkinsnexussonarque.git'
+            }
+
+        }
+    }
+}
